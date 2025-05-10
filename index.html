@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Website</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .icons {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .icons i {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>Hotel Paradise</span></a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#Book">Book</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="#Services">Services</a>
+      <a href="#Reviews">Reviews</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+  
+  <!-- Move the form OUTSIDE the header -->
+  <form action="" class="search-bar-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+  </form>
+  </header>
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>login</h3>
+      <input type="email" class="box" placeholder="enter your email">
+      <input type="password" class="box" placeholder="enter your password">
+      <input type="submit" value="login now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <p>forgot password?<a href="#">click here</a></p>
+      <p>dont have an account?<a href="#">register now</a></p>
+    </form>
+  </div>
+  <section class="home" id="home">
+    <video autoplay loop muted playsinline class="background-video">
+    <source src="hotel akhisir new.mp4" type="video/mp4"> 
+    </video>
+    <div class="center-content">
+      <h3 style="text-decoration: underline;">WELCOME TO A GLOBAL SYMBOL OF LUXURY</h3>
+      <p>Discover new places with us where luxury awaits</p>
+      <a href="#" class="btn">discover more</a>
+    </div>
+  </section>
+  <section class="book" id="book">
+    <h1 class="heading">
+    <span>B</span>
+    <span>O</span>
+    <span>O</span>
+    <span>K</span>
+    <span class="space"></span>
+    <span>N</span>
+    <span>O</span>
+    <span>W</span>
+  </h1>
+  <div class="row">
+    <div class="img">
+      <img src="booking.png" alt="">
+    </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="fb0b26c0-d7d2-47ed-91eb-b40e4919665d">
+      <div class="inputBox">
+        <h3>name</h3>
+        <input type="text" name="first_name" placeholder="name">
+      </div>
+      <div class="inputBox">
+        <h3>where to</h3>
+        <input type="text" name="destination" placeholder="place name">
+      </div>
+      <div class="inputBox">
+        <h3>how many</h3>
+        <input type="number" name="guests" placeholder="number of guests">
+      </div>
+      <div class="inputBox">
+        <h3>arrivals</h3>
+        <input type="date" name="arrival_date" >
+      </div>
+      <div class="inputBox">
+        <h3>leavings</h3>
+        <input type="date" name="leaving_date" >
+      </div>
+      <input type="submit" class="btn" value="book now">
+    </form>
+  </div>
+  </section>
+  <section class="services" id="services">
+    <h1 class="heading">
+      <span>S</span>
+      <span>E</span>
+      <span>R</span>
+      <span>V</span>
+      <span>I</span>
+      <span>C</span>
+      <span>E</span>
+      <span>S</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+          <h3>AFFORDABLE HOTELS</h3>
+          <br>
+      </div>
+          <div class="box">
+            <i class="fas fa-dumbbell"></i>
+          <h3>STATE OF ART ARCHETECTURE AND AMMENITIES LIKE GYM,POOL,INDOOR AND OUTDOOR SPORTS CENTER ETC.</h3>
+          <br>
+          </div>
+            <div class="box">
+              <i class="fas fa-mountain"></i>
+           <h3>SCENICE VIEWS RANGING FROM SUNNY BEACHES TO SNOWY MOUNTAINS</h3>
+           <br>
+            </div>
+           <div class="box">
+            <i class="fas fa-clock"></i>
+          <h3>STAFF THAT PROVIDE 24/7 SERVICES TO CUSTOMERS</h3>
+          <br>
+           </div>
+           <div class="box">
+            <i class="fas fa-utensils"></i>
+        <h3> RESTAURANTS THAT MAKE THE MOST DELICIOUS DISHES</h3>
+        <br>
+           </div>
+       
+
+           </div>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <h1 class="heading">
+      <span>G</span>
+      <span>A</span>
+      <span>L</span>
+      <span>L</span>
+      <span>E</span>
+      <span>R</span>
+      <span>Y</span>
+    </h1>
+  <div class="box-container">
+    <div class="box">
+      <img src="gallery1.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery2.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery3.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery4.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery5.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery6.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery7.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery8.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery9.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img src="gallery10.jpg" alt="">
+      <div class="content">
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="review" id="review">
+  <h1 class="heading">
+    <span>R</span>
+    <span>E</span>
+    <span>V</span>
+    <span>I</span>
+    <span>E</span>
+    <span>W</span>
+    <span>S</span>
+  </h1>
+  <div class="review-slider">
+    <div class="wrapper">
+      <div class="slider">
+        <div class="box">
+          <h3>Utkarsh Ukey</h3>
+          <p>"An unforgettable stay! The rooms were spotless, beautifully designed, and extremely comfortable. The staff went above and beyond to make sure we felt at home. Location was perfect — close to major attractions yet peaceful. Will definitely be returning!"
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="box">
+          <h3>Pushkar Meshram</h3>
+          <p>"I can’t recommend this hotel enough! From the warm welcome at check-in to the luxurious amenities, everything was top-notch. The food at the in-house restaurant was delicious, and the rooftop view was breathtaking. Five stars without a doubt!"
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="box">
+          <h3>Vitthal Kadam</h3>
+          <p>"Exceptional experience! The service was outstanding — every staff member was friendly and helpful. The room was spacious, modern, and had a wonderful view. Loved the attention to small details that made our stay extra special. Worth every penny!"
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="box">
+          <h3>Vaibhav Shette</h3>
+          <p>"Perfect getaway spot! The atmosphere was relaxing and elegant, the pool was pristine, and the spa services were heavenly. Waking up to a beautiful breakfast every morning was the cherry on top. Already planning my next trip back!"
+
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h1 class="heading">
+    <span>C</span>
+    <span>O</span>
+    <span>N</span>
+    <span>T</span>
+    <span>A</span>
+    <span>C</span>
+    <span>T</span>
+  </h1>
+  <div class="row">
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="fb0b26c0-d7d2-47ed-91eb-b40e4919665d">
+    <div class="inputBox">
+      <input type="text" name="first_name" placeholder="name">
+      <input type="email" name="email" placeholder="email">
+    </div>
+    <div class="inputBox">
+      <input type="number" name="number" placeholder="number">
+      <input type="text" placeholder="subject">
+    </div>
+    <textarea placeholder="message" name="message" cols="30" rows="10"></textarea>
+    <input type="submit" class="btn" value="send message">
+  </form>
+  </div>
+</section>
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3> About Us</h3>
+      <p>"At Hotel Paradise, we believe every stay should be a memorable experience. With world-class hospitality, elegant accommodations, and personalized service, we create a home away from home for every guest. Whether you're here for business, leisure, or a special celebration, our dedicated team is committed to making your stay exceptional.
+        With thoughtfully designed rooms, outstanding dining options, and personalized services, we aim to create a warm and welcoming environment where every guest feels at home. Your comfort is our priority, and your satisfaction is our greatest reward."</p>
+    </div>
+    <div class="box">
+      <h3>Branch Locations</h3>
+      <a href="#">India(Mumbai,Banglore,Delhi)</a>
+      <a href="#">USA(New York,Seattle,California)</a>
+      <a href="#">Indonesia(Jakarta,Bali)</a>
+      <a href="#">Japan</a>
+      <a href="#">Brazil</a>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#">Home</a>
+      <a href="#">Book</a>
+      <a href="#">Gallery</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">Reviews</a>
+    </div>
+    <div class="box">
+      <h3>follow us</h3>
+      <a href="#">facebook</a>
+      <a href="#">instagram</a>
+      <a href="#">X</a>
+      <a href="#">linkedin</a>
+    </div>
+  </div>
+</section>
+</body>
+</html>
